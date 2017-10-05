@@ -1,0 +1,5 @@
+*.iml
+.idea
+dist
+public/build
+node_modules

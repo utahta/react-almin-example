@@ -1,0 +1,29 @@
+{
+  "name": "almin-example",
+  "version": "0.0.1",
+  "description": "almin example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "utahta",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react-router": "^4.0.15",
+    "@types/react-router-dom": "^4.0.8",
+    "almin": "^0.14.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.0.9",
+    "@types/react-dom": "^16.0.0",
+    "awesome-typescript-loader": "^3.2.3",
+    "babel-preset-env": "^1.6.0",
+    "typescript": "^2.5.3",
+    "webpack": "^3.6.0"
+  }
+}
