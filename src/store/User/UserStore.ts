@@ -5,15 +5,20 @@ export class UserState {
     user: User;
     userList: User[];
 
-    constructor(user?: User, userList?: User[]) {
-        this.user = !user ? new User() : user;
-        this.userList = !userList ? [] : userList;
+    constructor() {
+        this.user = new User();
+        this.userList = [];
     }
 
     reduce(payload: {type: string, user?: User, userList?: User[]}) {
+        let state = new UserState();
         switch (payload.type) {
             case "user":
-                return new UserState(payload.user, payload.userList);
+                state.user = payload.user;
+                return state;
+            case "userList":
+                state.userList = payload.userList;
+                return state;
             default:
                 return this;
         }

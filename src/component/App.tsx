@@ -17,7 +17,7 @@ export class App extends React.Component<AppProps, AppState> {
         this.state = appContext.getState();
     }
 
-    componentDidMount() {
+    componentWillMount() {
         this.releaseChange = appContext.onChange(() => {
             this.setState(appContext.getState());
         });

@@ -6,7 +6,7 @@ export default class FetchUserListUseCase extends UseCase {
     execute() {
         const resp = adminApiClient.get("/users");
         this.dispatch({
-            type: "user",
+            type: "userList",
             userList: parseUserList(resp)
         });
     }

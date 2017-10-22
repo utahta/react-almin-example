@@ -13,11 +13,7 @@ export class UserList extends React.Component<UserListProps, {}> {
     constructor(props: UserListProps) {
         super(props);
     }
-
-    componentWillMount() {
-        this._onFetch();
-    }
-
+    
     _onFetch = () => {
         appContext.useCase(new FetchUserListUseCase()).execute();
     };
